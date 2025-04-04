@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  transition: background 0.5s ease-in-out;
+}
+
+/* Container */
+.content {
+  max-width: 600px;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.content:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#top {
+  font-size: 20px;
+  color: #777;
+}
+
+/* Quote Styling */
+blockquote {
+  font-size: 22px;
+  font-style: italic;
+  color: #444;
+  border-left: 5px solid #4CAF50;
+  padding-left: 15px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+/* Different Button Colors */
+button:nth-child(2) {
+  background: #2196F3;
+}
+
+button:nth-child(2):hover {
+  background: #1976D2;
+}
+
+button:nth-child(3) {
+  background: #4267B2;
+}
+
+button:nth-child(3):hover {
+  background: #365899;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .content {
+      width: 90%;
+      padding: 30px;
+  }
+
+  blockquote {
+      font-size: 18px;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 10px 18px;
+  }
+}
